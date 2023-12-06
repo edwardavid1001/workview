@@ -1,0 +1,55 @@
+/* Estilo general para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf0f1; /* Color de fondo suave */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el contenedor principal */
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para la sección del formulario */
+.d-flex {
+    height: 100%;
+}
+
+/* Estilo para el borde luminoso morado */
+.bg-light {
+    padding: 30px; /* Reducción del espacio interior */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 128, 122, 0.3); /* Reducción de la intensidad de la sombra */
+    background-color: #fff; /* Fondo blanco */
+}
+
+/* Estilo para los botones */
+.btn {
+    border-radius: 5px;
+    padding: 12px 24px; /* Aumento del espacio interior */
+    font-size: 1.2em; /* Tamaño de fuente un poco mayor */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-success {
+    background-color: #3498db; /* Cambio del color a un tono más claro de azul */
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #2980b9; /* Cambio del color al hacer hover */
+}
+
+.btn-link {
+    color: #e74c3c; /* Cambio del color para los enlaces */
+}
+
+.btn-link:hover {
+    text-decoration: none; /* Eliminación del subrayado al hacer hover */
+    color: #c0392b; /* Cambio del color al hacer hover */
+}

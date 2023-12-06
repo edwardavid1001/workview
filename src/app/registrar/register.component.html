@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8232721784.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Registro</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@12"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <main class="container d-flex align-items-center justify-content-center">
+        <div class="bg-light p-5 text-center">
+            <h1 class="mb-4">¡Regístrate!</h1>
+            <img src="../assets/img/logo.png" alt="Logo" class="mb-4" style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
+
+            <div class="mb-3">
+                <label for="tipoID" class="form-label"><b>Tipo de Documento:</b></label>
+                <select name="tipoID" id="tipoID" class="form-select border border-success">
+                    <option value="CC">C.C</option>
+                    <option value="TI">T.I</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="ID" class="form-label"><b>Número de Documento:</b></label>
+                <input name="ID" id="ID" class="form-control border border-success" required minlength="6">
+            </div>
+
+            <div class="mb-3">
+                <label for="name" class="form-label"><b>Nombre de Usuario:</b></label>
+                <input name="name" id="name" class="form-control border border-success">
+            </div>
+
+            <div class="mb-3">
+                <label for="pass" class="form-label"><b>Contraseña:</b></label>
+                <input type="password" name="pass" id="pass" class="form-control border border-success">
+            </div>
+
+            <div class="d-grid gap-2 mb-3">
+                <button class="btn btn-outline-success" (click)="createUser()">Regístrate</button>
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-link" (click)="navegarLogin()">Inicia Sesión</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 text-center">
+        <div class="container">
+            <p class="text-muted">&copy;workview 2023. Todos los derechos reservados.</p>
+            <p class="text-muted">Contacto: <strong>+57 310 316 7700</strong></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

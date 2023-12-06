@@ -1,0 +1,102 @@
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8232721784.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dashboard.component.css">
+    <title>Dashboard</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Barra de navegación -->
+    <header class="main-header">
+        <img src="../assets/img/logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul class="navigation">
+                <li><a routerLink="/dashboard">Inicio</a></li>
+                <li><a routerLink="/opciones-empleo">Opciones de empleo</a></li>
+                <li><a routerLink="/perfil">Perfil</a></li>
+                <li><a (click)="navegarLogin()">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container d-flex flex-column justify-content-center">
+        <div class="row">
+            <!-- Sección de ofertas laborales -->
+            <div class="col-md-12">
+                <h2 class="section-title">Conoce las ofertas!</h2>
+
+                <div class="card-deck">
+                    <!-- Empresa 1 -->
+                    <div class="card">
+                        <img src="../assets/img/empresa1.png" class="card-img-top" alt="Empresa 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Computrabajo</h5>
+                            <p class="card-text">importante empresa busca desarrolador fullstack con 1 dia de experiencia</p>
+                            <small class="text-muted">Publicado hace 2 días</small>
+                        </div>
+                    </div>
+
+                    <!-- Empresa 2 -->
+                    <div class="card">
+                        <img src="../assets/img/empresa2.png" class="card-img-top" alt="Empresa 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Ferrari</h5>
+                            <p class="card-text">Buscamos importante conductor para manejar estas ganas de beber</p>
+                            <small class="text-muted">Publicado hace 2 semana</small>
+                        </div>
+                    </div>
+
+                    <!-- Empresa 3 -->
+                    <div class="card">
+                        <img src="../assets/img/empresa3.png" class="card-img-top" alt="Empresa 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Xiaomi</h5>
+                            <p class="card-text">importante empresa busca programador para android con 2 años de xp</p>
+                            <small class="text-muted">Publicado hace 1 mes</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck">
+                    <!-- Empresa 4 -->
+                    <div class="card">
+                        <img src="../assets/img/empresa4.png" class="card-img-top" alt="Empresa 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Onikuma Gaming</h5>
+                            <p class="card-text">Importante empresa del sector busca gamer para juagr gta VI</p>
+                            <small class="text-muted">Publicado hace 1 días</small>
+                        </div>
+                    </div>
+
+                    <!-- Empresa 5 -->
+                    <div class="card">
+                        <img src="../assets/img/empresa5.png" class="card-img-top" alt="Empresa 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Epson Print</h5>
+                            <p class="card-text">Importante empresa del sector busca joven para que arregle fotocopiadoras con 6 meses de experiencia</p>
+                            <small class="text-muted">Publicado hace 9 días</small>
+                        </div>
+                    </div>                
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 text-center">
+        <div class="container">
+            <p class="text-muted">&copy;workview 2023. Todos los derechos reservados.</p>
+            <p class="text-muted">Contacto: <strong>+57 310 316 7700</strong></p>
+        </div>
+    </footer>
+
+    <!-- Importa Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
